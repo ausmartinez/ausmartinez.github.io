@@ -1,9 +1,313 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title>Austin Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/css/uikit.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p>testo</p>
+        <div class="uk-container">
+            <header>
+                <div class="uk-panel">
+                    <img class="uk-align-left uk-margin-remove-adjacent" src="public/im.jpg" width="225" height="150" alt="Example image">
+                    <h1>Austin Martinez</h1>
+                    <h2>Data Scientist, Software Engineer, Artist</h2>
+                    <p>email.austinmartinez@gmail.com</p>
+                    <p>
+                        Hello and thank you for visiting my portfolio site. Below are several examples of projects I've worked on. 
+                        Some were for school, others are passion projects in varying states of completion. 
+                        There's a healthy combination of creative and technical examples to look through. 
+                        If you have questions or would like to reach out, don't hesitate to get in touch via my email.
+                    </p>
+                </div>
+            </header>
+            <hr class="uk-divider-icon">
+            <main>
+                <div>
+                    <ul uk-accordion>
+                        <li>
+                            <h1 class="uk-accordion-title" href="#" >About Me</h1>
+                            <div class="uk-accordion-content">
+                                <h3>Experience</h3>
+                                <p>
+                                    Born and raised in Southern California, I currently hold a Bachelor's of Science in Computer Science from CSUMB and a Master's of Science in Business Analytics from USC.
+                                	I have working experience as a software engineer at a two different companies and as the Database Analyst of Research at USC's Marshall school of business.
+                                	That role was primarily building out the ETL infrastructure to acquire data on research materials and make it valuable for our database.
+                                	I was also the primary point of contact for ad hoc data/analysis requests from faculty and research orgs.
+                                	I have since been working as a freelance/contract software development generalist, but am looking for a more consistent and permanent positions.
+                                </p>
+                                <h3>Art</h3>
+                                <p>
+                                    Alongside my technical experience, I have pursued artistic fields since I could read.
+                                	I started learning piano/music theory at the age of 4 and continued to pick up more instruments throughout my life.
+                                	I've even had a few opportunities to play internationally.
+                                	To this day, I write and produce music when I find the time.
+                                	I started taking interest in visual mediums sometime during middle school.
+                                	Wanting to be a youtube star, I would film and edit (not very good) videos with my friends and still edit for friends' Youtube channels from time to time.
+                                	Digital art and illustration would become my focus during freshman year of highschool.
+                                	To this day, drawing and painting is still a very large part of my life.
+                                	Starting in undergrad, I began learning game development and 3D tools.
+                                	Using a stolen copy of Maya, I learned 3D modeling and rigging and also built a simple render engine from the ground up using openGL and raw GLSL.
+                                	More recently, I've made a few game concepts using Unreal, blender, and ZBrush. I've also been trying my hand at 2D animation, but still have a lot to learn.
+                                	Looking to the future, I want to combine both my technical expertise and my lifelong love of the arts.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <h1 class="uk-accordion-title" href="#" >Technical Projects</h1>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list uk-list-divider">
+                                    <li>
+                                        <div class="uk-panel uk-padding">
+                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/art.jpg" width="225" height="150" alt="Example image">
+                                            <h2>Art Reference Catalog Fullstack App</h2>
+                                            <h3>2022</h3>
+                                            <p>
+                                                After drawing and painting for several years, I accumulated hundreds of reference images on my local harddrive.
+                                            	There were countless times in which I would want to find a specific image to reference, but I would then have to look through hundreds of images to find it.
+                                            	Even with all the images categorized, this was often very difficult.
+                                            	So I decided to build a full stack app to save the image names along with user added tags.
+                                            	The user can upload an image and enter information for the image: character name, source name, body type, NSFW filter, and tags.
+                                            	You can search for images via this information or view random images with or without a filter.
+                                            	You can also screen for NSFW images if that is something you want to avoid.
+                                            	The app is fullstack with an adaptive front-end and uses cloud storage via MongoDB atlas. 
+                                            </p>
+                                            <a href="https://github.com/ausmartinez/Art-Reference-Catalog-App">Code Here</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-panel uk-padding">
+                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/conlang.jpg" width="225" height="150" alt="Example image">
+                                            <h2>Custom Constructed Language Dictionary</h2>
+                                            <h3>2020</h3>
+                                            <p>
+                                                In 2019, I got interested in world-building and writing stories for these fictional worlds. Part of that was developing written and spoken languages.
+                                            	One difficulty in that, is remembering definitions of the potentially hundreds of words your conlang may have.
+                                            	Initially, I was storing everything on a google doc, but this quickly became too complicated.
+                                            	So instead, I built a CLI tool that allows you to add, edit, and delete words and their definitions.
+                                            	There was no need for a traditional DB solution, so it is simply a collection of specific JSON operations.
+                                            	However, it was really helpful and is an excellent example of successfully filling a need and creating a time-saver with what I have learned. 
+                                            </p>
+                                            <a href="https://github.com/ausmartinez/ConLang-Dictionary">Code Here</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-panel uk-padding">
+                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/gcp.png" width="225" height="150" alt="Example image">
+                                            <h2>RetinaNet Object Detection on MBARI Station M Images</h2>
+                                            <h3>2019</h3>
+                                            <p>
+                                                This was my senior year capstone project in which we trained a deep learning model on the Google Cloud Platform in order to help deep sea researchers identify and track benthic life.
+                                            	The Monterey Bay Aquarium Research Institute had seafloor imaging stations that would capture an image of the sea floor every hour for an entire year.
+                                            	Afterwards, they would have ~8000 images to look through to identify any lifeforms captured by the camera.
+                                            	This is a very time-consuming task and very tedious.
+                                            	Our project was to provide an automated solution using Deep learning and Computer Vision.
+                                            	We were to train a, at the time, bleeding edge DL model called RetinaNet.
+                                            	The model was so new, much of the cloud infrastructure on GCP was not equipped to run this model and we were forced to build much of those processes.
+                                            	I specifically worked on the tensorflow record transfer and training/inference portion of the pipeline.
+                                            </p>
+                                            <a href="https://github.com/ausmartinez/MBARI-RetinaNet-ODM">Code Here</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-panel uk-padding">
+                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/cpp.png" width="225" height="150" alt="Example image">
+                                            <h2>Audio Reactive PBR Render Engine</h2>
+                                            <h3>2018</h3>
+                                            <p>
+                                                I wanted to learn how to make a game engine with my friend. So we set out to build one using OpenGL and GLSL.
+                                            	Following a tutorial, we managed to build a very simple engine that could load objects, apply shaders, and allow camera movement.
+                                            	Afterwards, I wanted to do something fun and decided to make an audio visualizer using shaders as the frequency response.
+                                            	Built in the same stack, you can pass an audio file to the program, it will then play the file and use FFT to extract frequency information.
+                                            	It then bins the frequency range and each bin is attached to some parameter in the lighting shaders.
+                                            	I didn't know too much about how to make 3D lighting look good at the time and the frequency response is not that good, but I was still able to get a result.
+                                            </p>
+                                            <a href="https://github.com/ausmartinez/Audio-Reactive-PBR-Render-Engine">Code Here</a>
+                                            <div uk-lightbox><a href="https://www.youtube.com/watch?v=967pWoz0MPE">Video Here</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h1 class="uk-accordion-title" href="#" >Games</h1>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list uk-list-divider">
+                                    <li>
+                                        <div class="uk-panel uk-padding">
+                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/bck.png" width="225" height="150" alt="Example image">
+                                            <h2>BCK_RM</h2>
+                                            <h3>2022 - 2023</h3>
+                                            <p>
+                                                BCK_RM was intended to be a puzzle/quest game set in the backrooms.
+                                            	Players would traverse the backrooms to find clues to potentially solve real-world puzzles and ciphers.
+                                            	However, I found that the development was too much to do alone and the tone of the backrooms community quickly changed to something I disliked.
+                                            	So the project is abandoned at the moment.
+                                            	However, I still think the tech and idea is interesting and encourage you to check out this video of me explaining the processes.
+                                            </p>
+                                            <div uk-lightbox><a href="https://www.youtube.com/watch?v=2WOUEWYkon4">Video Here</a></div>
+                                        </div>
+                                    </li>   
+                                    <li>
+                                        <div class="uk-panel uk-padding">
+                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/pv4.png" width="225" height="150" alt="Example image">
+                                            <h2>Preservation 4</h2>
+                                            <h3>2023 - Ongoing</h3>
+                                            <p>
+                                                Preservation 4 is a short and simple story game about the player investigating an abandoned town called "Preservation 4".
+                                            	It is meant to be a simple and creepy walking sim as well as an introduction to my fictional universe.
+                                            	All elements are custom made to fit the PS1 aesthetic, so it's taking a little longer than I would have wanted and is currently on the backburner.
+                                            	However, I do intend to finish it.
+                                            </p>
+                                        </div>
+                                    </li>   
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h1 class="uk-accordion-title" href="#" >Art</h1>
+                            <div class="uk-accordion-content">
+                                <p>It's all portraits of girls. sorry.</p>
+                                <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/pre.png" data-caption="2023">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/pre.png" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/smallFF.png" data-caption="2022">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/smallFF.png" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/scanty.png" data-caption="2019">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/scanty.png" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/sennsns-S.png" data-caption="2021">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/sennsns-S.png" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/zalder-f.png" data-caption="2021">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/zalder-f.png" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/small.png" data-caption="2018">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/small.png" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h1 class="uk-accordion-title" href="#" >Photography</h1>
+                            <div class="uk-accordion-content">
+                                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/1-border.png">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/1-border.png" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/20220602-IMG_0010.jpg">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/20220602-IMG_0010.jpg" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/IMG_0022.jpg">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/IMG_0022.jpg" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/fox.jpg">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/fox.jpg" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/20220602-IMG_0028.jpg">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/20220602-IMG_0028.jpg" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/3nb.png">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/3nb.png" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/20220822-IMG_0007_1.jpg">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/20220822-IMG_0007_1.jpg" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/build.png">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/build.png" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/hhhhhh.png">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/hhhhhh.png" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div uk-lightbox>
+                                            <a href="large/thisonef4.jpg">
+                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/thisonef4.jpg" uk-img></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <h1 class="uk-accordion-title" href="#" >Misc Videos</h1>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list">
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=NjS57mLDPCE">Old Video Reel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
