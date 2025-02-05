@@ -180,7 +180,7 @@
                                             In the past few months I’ve gotten really into 3D animation. I’ve dabbled in 3D modeling and Blender before but have started spending a lot of time in the program. When I first got into 3D, it was for the purpose of making 2D animation. The idea was to create a 3D to 2D pipeline where 3D models would do the heavy lifting for animation and I would draw over each frame in 2D to try and preserve authentic 2D stylings. However, this proved too time consuming and my 3D modeling skills are still not where I want them to be. Instead, I’ve opted to use stylized low-poly models that use 2D textures for the face. An issue I found immediately was the need to draw each eye shape for every direction a character looks. 
                                             My solution was to create a 2D Texture eye rig. First, we create a group of numbered textures to form a grid of pupils that cover every direction a character can look. We then create a driver that looks at the X,Y coordinates of a bone and map them to its corresponding pupil texture. A texture with transparency to allow the pupil to always be visible is then placed on top of the selected pupil texture. This allows the animator to independently control the eye’s expression and eye direction without the need to draw an excessive amount of eye textures. 
                                             </p>
-                                            <a href="https://www.youtube.com/watch?v=mZkod3m5wuo">Check It Out Here</a>
+											<div uk-lightbox><a href="https://www.youtube.com/watch?v=mZkod3m5wuo">Check It Out Here</a></div>
                                         </div>
                                     </li>
                                 </ul>
@@ -193,6 +193,18 @@
                             <h1 class="uk-accordion-title" href="#" >Games</h1>
                             <div class="uk-accordion-content">
                                 <ul class="uk-list uk-list-divider">
+									<li>
+                                        <div class="uk-panel uk-padding">
+                                            <img class="uk-align-left uk-margin-remove-adjacent" src="large/ballistic.png" width="225" height="150" alt="Example image">
+											<h2>BALL-ISTIC</h2>
+											<h3>2025</h3>
+											<p>
+											Made for the two week long Pirate Software Game Jam 16, BALL-ISTIC is a game where the player controls a spiky ball that rolls around, damages enemies, and picks up dropped weapons. Picked up weapons become part of the ever-expanding ball, affecting movement, damage taken, and damage dealt by the player.
+											</p>
+											<div><a href="https://itch.io/jam/pirate/rate/3289585">Play it here!</a></div>
+											<div><a href="https://github.com/erikringwalters/pirate-jam-16-prototype">Source Code</a></div>
+										</div>
+                                    </li> 
                                     <li>
                                         <div class="uk-panel uk-padding">
                                             <img class="uk-align-left uk-margin-remove-adjacent" src="public/bck.png" width="225" height="150" alt="Example image">
@@ -209,7 +221,7 @@
                                         </div>
                                     </li>   
                                     <li>
-                                        <div class="uk-panel uk-padding">
+                                        <div class="uk-panel uk-padding"> 
                                             <img class="uk-align-left uk-margin-remove-adjacent" src="public/pv4.png" width="225" height="150" alt="Example image">
                                             <h2>Preservation 4</h2>
                                             <h3>2023 - Ongoing</h3>
