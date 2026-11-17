@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Austin Portfolio</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/css/uikit.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/js/uikit.min.js"></script>
@@ -8,544 +10,388 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="uk-container">
-            <header>
-                <div class="uk-panel">
-                    <img class="uk-align-left uk-margin-remove-adjacent" src="large/20221009_174935.jpg" width="225" height="150" alt="Example image">
-                    <h1>Austin Martinez</h1>
-                    <h2>Data Scientist, Software Engineer, Artist</h2>
-                    <p>email.austinmartinez@gmail.com</p>
-                    <p>
-                    Hello and thank you for visiting my portfolio site. Below are several examples of projects I've worked on. 
-                    Some were for school, others are passion projects in varying states of completion. 
-                    There's a healthy combination of creative and technical examples to look through. 
+        <div class="uk-container page">
+            <header class="hero">
+                <img class="hero-photo" src="large/20221009_174935.jpg" alt="Austin Martinez">
+                <div>
+                    <h1 class="hero-name">Austin Martinez</h1>
+                    <h2 class="hero-role">Data Scientist, Software Engineer, Artist</h2>
+                    <div class="hero-links">
+                        <a class="hero-email" href="mailto:email.austinmartinez@gmail.com"><span uk-icon="icon: mail; ratio: 0.8"></span>email.austinmartinez@gmail.com</a>
+                        <!-- TODO: replace # with your TikTok profile URL -->
+                        <a class="hero-social" href="https://www.tiktok.com/@ghostvendor" target="_blank" rel="noopener" aria-label="TikTok" uk-tooltip="TikTok"><span uk-icon="icon: tiktok; ratio: 0.9"></span></a>
+                        <!-- TODO: replace # with your Instagram profile URL -->
+                        <a class="hero-social" href="https://www.instagram.com/ghost_vendor/" target="_blank" rel="noopener" aria-label="Instagram" uk-tooltip="Instagram"><span uk-icon="icon: instagram; ratio: 0.9"></span></a>
+                    </div>
+                    <p class="hero-intro">
+                    Hello and thank you for visiting my portfolio site. Below are several examples of projects I've worked on.
+                    Some were for school, others are passion projects in varying states of completion.
+                    There's a healthy combination of creative and technical examples to look through.
                     If you have questions or would like to reach out, don't hesitate to get in touch via my email.
                     </p>
                 </div>
             </header>
-            <hr class="uk-divider-icon">
             <main>
-                <div>
-                    <ul uk-accordion>
-                        <li>
-                            <h1 class="uk-accordion-title" href="#" >About Me</h1>
-                            <div class="uk-accordion-content">
-                                <h3>Experience</h3>
-                                <p>
-                                Born and raised in Southern California, I currently hold a Bachelor's of Science in Computer Science from CSUMB and a Master's of Science in Business Analytics from USC. I have working experience as a software engineer at two different companies and as the Database Analyst of Research at USC's Marshall school of business. That role was primarily building out the ETL infrastructure to acquire data on research materials and make it valuable for our database. I was also the primary point of contact for ad hoc data/analysis requests from faculty and research orgs. After that position, I made my first steps into game development by becoming the principal data scientist for Broken Circle Studios working on the mobile game Marvel Puzzle Quest. It was super fun working with the Marvel IP and I’m really proud of the work our team did revitalizing the game’s monetization in the face of sometimes overwhelming negative statistics. Since then, I’ve been working with some passionate people building a collegiate Esports league from the ground up over at CCEL. This past year, we achieved full 501c3 status as an org and have a packed roster of events planned for the 2025 year. There’s a lot more ground work to be done, but we continue to grow every day!
-                                </p>
-                                <h3>Art</h3>
-                                <p>
-                                Alongside my technical experience, I have pursued artistic fields since I could read.
-                                I started learning piano/music theory at the age of 4 and continued to pick up more instruments throughout my life.
-                                I've even had a few opportunities to play internationally.
-                                To this day, I write and produce music when I find the time.
-                                I started taking interest in visual mediums sometime during middle school.
-                                Wanting to be a youtube star, I would film and edit (not very good) videos with my friends and still edit for friends' Youtube channels from time to time.
-                                Digital art and illustration would become my focus during freshman year of highschool.
-                                To this day, drawing and painting is still a very large part of my life.
-                                Starting in undergrad, I began learning game development and 3D tools.
-                                Using a stolen copy of Maya, I learned 3D modeling and rigging and also built a simple render engine from the ground up using openGL and raw GLSL.
-                                More recently, I've made a few game concepts using Unreal, blender, and ZBrush. I've also been trying my hand at animation, both 2D and 3D.
-                                Looking to the future, I want to combine both my technical expertise and my lifelong love of the arts.
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <h1 class="uk-accordion-title" href="#" >Technical Projects</h1>
-                            <div class="uk-accordion-content">
-                                <ul class="uk-list uk-list-divider">
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/youtube.png" width="225" height="150" alt="Example image">
-                                            <h2>YTBoxD</h2>
-                                            <h3>2026</h3>
-                                            <p>
-                                            YTBoxD is the working name for an app that is effectively LetterboxD, except for Youtube Videos.
-                                            Currently still in testing, the app provides an alternative, community driven recommendation system and more granular ratings than what the base Youtube service provides.
-                                            The app is written in Svelt, Go, PostgreSQL, and hosted on Ubuntu. 
-                                            </p>
-                                            <a href="https://ghostvendor.net">Visit the Site Here</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/art.jpg" width="225" height="150" alt="Example image">
-                                            <h2>Art Reference Catalog Fullstack App</h2>
-                                            <h3>2025</h3>
-                                            <p>
-                                            In 2022, I wrote a simple webapp for managing saved reference images. 
-                                            However, it was written without a frontend framework and relied on css libraries and raw JS scripts.
-                                            So, this a rewrite using React, Nodejs/Expressjs, and Mongodb. 
-                                            </p>
-                                            <p>
-                                            After drawing and painting for several years, I accumulated hundreds of reference images on my local harddrive.
-                                            There were countless times in which I would want to find a specific image to reference, but have to look through hundreds of images to find it.
-                                            Even with all the images categorized, this was often very difficult and time consuming if I had a specific image in mind.
-                                            So, I decided to build a full stack app to save the image names along with user added tags.
-                                            The user can upload an image and enter information for the image: character name, source name, body type, NSFW filter, and tags.
-                                            You can search for images via this information or view random images with or without a filter.
-                                            The webapp manages the images locally and saves image data via cloud-based MongoDb.
-                                            </p>
-                                            <a href="https://github.com/ausmartinez/Art-Reference-Catalog-App">Code Here</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="large/pink.png" width="500" height="400" alt="Example image">
-                                            <h2>Personal Spotify Wrapped</h2>
-                                            <h3>2024/25</h3>
-                                            <p>
-                                            Inspired by a Tiktok and a want for a more visible portfolio, this project uses Spotify’s web API
-                                            to create a personal Spotify Wrapped written entirely in Python. I do plan to revisit near the
-                                            end of 2025 to see what has changed and to compare results with the official Spotify wrapped.
-                                            This notebook looks at my listening history and generates an image with visuals that change in
-                                            accordance with the data. It generates an “album map” which is the top 4 listened albums averaged
-                                            together and then passed through a median filter to create an interesting effect. We also use the
-                                            average color of this album map to decide what color theme to use for the final image. Lastly we
-                                            use a histogram of the songs’ popularity field to make the background a little more interesting.
-                                            If you listen to less popular music, the bars will be right skewed and more left skewed if you tend
-                                            to favor the top of the billboards. As of writing (1/6/25), there is only about two weeks worth of
-                                            data.
-                                            Data is collected via a script hosted on a remote Ubuntu server that pulls my most recently played
-                                            songs from Spotify web API ever hour. The script saves the most recently played songs to a csv
-                                            file using the played_at field to make sure there is no overlapping or duplicated data and to only
-                                            append unrecorded data while also doing some initial cleaning. We then simply pull the csv file
-                                            that now contains my entire listening history for us in this notebook.
-                                            Initially, I planned on doing an in depth statistical analysis for my listening habits using the number
-                                            of times I listened to a song as the response variable. However a few days before I started working
-                                            on this project, Spotify deprecated their audio feature API endpoint. This significantly decreased
-                                            the amount of numeric features that could be used in a statistical model without having to search
-                                            for, download, then process thousands of songs myself. We could derive more features from the
-                                            text data. However, I wanted to concentrate on the application of linear models rather than NLMs.
-                                            My initial concern was that, within black box of neural models, it may simply favor similary to
-                                            or matches with the most popular artists and song titles. I would say that a band having a name
-                                            similar to my most listened to band is not grounds for wether I would listen to a song a lot. For
-                                            instance, let’s consider the two bands “Ghost” and “As Ghosts”. Their names are very similar and
-                                            probably have high cosin similarity, but I have not listened to a “Ghost” song in months whereas
-                                            “As Ghosts” has become one of my favorite artists in the past month.
-                                            In leue of working statistical models, I decided to instead challenge myself to make something that
-                                            I would typically use Photoshop for except entirely in Python.
-                                            </p>
-                                            <a href="https://github.com/ausmartinez/Personalized-Spotify-Wrapped">Code Here</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/conlang.jpg" width="225" height="150" alt="Example image">
-                                            <h2>Custom Constructed Language Dictionary</h2>
-                                            <h3>2020</h3>
-                                            <p>
-                                            In 2019, I got interested in world-building and writing stories for these fictional worlds. Part of that was developing written and spoken languages.
-                                            One difficulty in that, is remembering definitions of the potentially hundreds of words your conlang may have.
-                                            Initially, I was storing everything on a google doc, but this quickly became too complicated.
-                                            So instead, I built a CLI tool that allows you to add, edit, and delete words and their definitions.
-                                            There was no need for a traditional DB solution, so it is simply a collection of specific JSON operations.
-                                            However, it was really helpful and is an excellent example of successfully filling a need and creating a time-saver with what I have learned. 
-                                            </p>
-                                            <a href="https://github.com/ausmartinez/ConLang-Dictionary">Code Here</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/gcp.png" width="225" height="150" alt="Example image">
-                                            <h2>RetinaNet Object Detection on MBARI Station M Images</h2>
-                                            <h3>2019</h3>
-                                            <p>
-                                            This was my senior year capstone project in which we trained a deep learning model on the Google Cloud Platform in order to help deep sea researchers identify and track benthic life.
-                                            The Monterey Bay Aquarium Research Institute had seafloor imaging stations that would capture an image of the sea floor every hour for an entire year.
-                                            Afterwards, they would have ~8000 images to look through to identify any lifeforms captured by the camera.
-                                            This is a very time-consuming task and very tedious.
-                                            Our project was to provide an automated solution using Deep learning and Computer Vision.
-                                            We were to train a, at the time, bleeding edge DL model called RetinaNet.
-                                            The model was so new, much of the cloud infrastructure on GCP was not equipped to run this model and we were forced to build much of those processes.
-                                            I specifically worked on the tensorflow record transfer and training/inference portion of the pipeline.
-                                            </p>
-                                            <a href="https://github.com/ausmartinez/MBARI-RetinaNet-ODM">Code Here</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/cpp.png" width="225" height="150" alt="Example image">
-                                            <h2>Audio Reactive PBR Render Engine</h2>
-                                            <h3>2018</h3>
-                                            <p>
-                                            I wanted to learn how to make a game engine with my friend. So we set out to build one using OpenGL and GLSL.
-                                            Following a tutorial, we managed to build a very simple engine that could load objects, apply shaders, and allow camera movement.
-                                            Afterwards, I wanted to do something fun and decided to make an audio visualizer using shaders as the frequency response.
-                                            Built in the same stack, you can pass an audio file to the program, it will then play the file and use FFT to extract frequency information.
-                                            It then bins the frequency range and each bin is attached to some parameter in the lighting shaders.
-                                            I didn't know too much about how to make 3D lighting look good at the time and the frequency response is not that good, but I was still able to get a result.
-                                            </p>
-                                            <a href="https://github.com/ausmartinez/Audio-Reactive-PBR-Render-Engine">Code Here</a>
-                                            <div uk-lightbox><a href="https://www.youtube.com/watch?v=967pWoz0MPE">Video Here</a></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <h1 class="uk-accordion-title" href="#" >Animation</h1>
-                            <div class="uk-accordion-content">
-                                <ul class="uk-list uk-list-divider">
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <h3>2026 Animation Reel (Contains audio) <a href="https://www.youtube.com/watch?v=9C9MoG3DrXQ">here</a></h3>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="large/pap.png" width="350" height="150" alt="Example image">
-                                            <h2>Public Access Purgatory - Opening | SENSORY OVERLOAD</h2>
-                                            <h3>2026</h3>
-                                            <p>
-                                            I had the priveledge to animate a few shots in the opening for the indie animation project, Public Access Purgaroty.
-                                            </p>
-                                            <div ><a href="https://www.youtube.com/watch?v=__Z1ha7vy28">Check It Out Here</a></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/momo.png" width="350" height="150" alt="Example image">
-                                            <h2>PaP - Stutturing Issue</h2>
-                                            <h3>2026</h3>
-                                            <p>
-                                            Small animation for social media featuring characters from the upcoming Indie Seriec, Public Access Purgatory.
-                                            </p>
-                                            <div ><a href="https://www.tiktok.com/@studio.freak.friends/video/7671322530661158176">Check It Out Here</a></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="large/op.png" width="350" height="150" alt="Example image">
-                                            <h2>Studies in Drevtam Opening</h2>
-                                            <h3>2026</h3>
-                                            <p>
-                                            Series opening for Studies in Drevtam.
-                                            </p>
-                                            <div uk-lightbox><a href="https://www.youtube.com/watch?v=St0_STBoZx0">Check It Out Here</a></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="large/0048.png" width="350" height="150" alt="Example image">
-                                            <h2>Drevtam Episode 1 (Explicit Language)</h2>
-                                            <h3>2025</h3>
-                                            <p>
-                                            The first episode of my Indie Animation project, Studies in Drevtam. This project has been a fun and colaberative effort with 3 voice actors and 2 volunteer animators.
-                                            </p>
-                                            <div uk-lightbox><a href="https://www.youtube.com/watch?v=exO8G7eV4_Y">Check It Out Here</a></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="large/1070.png" width="350" height="150" alt="Example image">
-                                            <h2>Short Character Intro Animation</h2>
-                                            <h3>2025</h3>
-                                            <p>
-                                            I made a fun little character animation. This was a particularly fun project as it involved a bunch of different skillsets all at once (3D modeling, 3D rigging, 3D animtion, Compositing, Video Editing, Audio Editing, Text Graphics). I also really like the song. :)
-                                            </p>
-                                            <div uk-lightbox><a href="https://youtu.be/bG3tS5DaJ7w">Check It Out Here</a></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="large/eyerig.png" width="350" height="150" alt="Example image">
-                                            <h2>2D Texture Eye Rig in Blender</h2>
-                                            <h3>2025</h3>
-                                            <p>
-                                            In the past few months I’ve gotten really into 3D animation. I’ve dabbled in 3D modeling and Blender before but have started spending a lot of time in the program. When I first got into 3D, it was for the purpose of making 2D animation. The idea was to create a 3D to 2D pipeline where 3D models would do the heavy lifting for animation and I would draw over each frame in 2D to try and preserve authentic 2D stylings. However, this proved too time consuming and my 3D modeling skills are still not where I want them to be. Instead, I’ve opted to use stylized low-poly models that use 2D textures for the face. An issue I found immediately was the need to draw each eye shape for every direction a character looks. 
-                                            My solution was to create a 2D Texture eye rig. First, we create a group of numbered textures to form a grid of pupils that cover every direction a character can look. We then create a driver that looks at the X,Y coordinates of a bone and map them to its corresponding pupil texture. A texture with transparency to allow the pupil to always be visible is then placed on top of the selected pupil texture. This allows the animator to independently control the eye’s expression and eye direction without the need to draw an excessive amount of eye textures. 
-                                            </p>
-                                            <div uk-lightbox><a href="https://www.youtube.com/watch?v=mZkod3m5wuo">Check It Out Here</a></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="large/unreal_cross.png" width="350" height="150" alt="Example image">
-                                            <h2>1 Day Unreal Engine Animation</h2>
-                                            <h3>2024</h3>
-                                            <p>
-                                            I wanted to challenge myself to animate a small sequence using Unreal Engine, both to make something cool but also as a portfolio piece. So I learned about the cinematic features, animation control, and particals in Unreal engine to create a small animation all in a single day. I pulled a model from Sketchfab that fitted the silhouette I wanted and then rigged and animated it (i was really new to 3d animation at the time). 
-                                            </p>
-                                            <div uk-lightbox><a href="https://www.artstation.com/artwork/vDN00v">Check It Out Here</a></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <h1 class="uk-accordion-title" href="#" >Graphics</h1>
-                            <div class="uk-accordion-content">
-                                <p>Mostly graphics and logos I've made for my non-profit, CCEL</p>
-                                <a href="https://www.youtube.com/watch?v=IsiRuA8xnSg">CCEL Stinger Screen</a>
-                                <p></p>
-                                <a href="https://www.youtube.com/watch?v=35O0S-fw-M0">CCEL LBCC Standby Screen</a>
-                                <p></p>
-                                <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/bigscreen.JPG" data-caption="2025">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/bigscreen.JPG" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/cream.png" data-caption="2025">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/cream.png" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/greeninv.png" data-caption="2025">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/greeninv.png" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/nails.png" data-caption="2025">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/nails.png" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/Render_2.png" data-caption="2025">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/Render_2.png" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/sdlogo.png" data-caption="2025">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/sdlogo.png" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/GV_Logo.png" data-caption="2025">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/GV_Logo.png" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <h1 class="uk-accordion-title" href="#" >Games</h1>
-                            <div class="uk-accordion-content">
-                                <ul class="uk-list uk-list-divider">
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="large/ballistic.png" width="225" height="150" alt="Example image">
-                                            <h2>BALL-ISTIC</h2>
-                                            <h3>2025</h3>
-                                            <p>
-                                            Made for the two week long Pirate Software Game Jam 16, BALL-ISTIC is a game where the player controls a spiky ball that rolls around, damages enemies, and picks up dropped weapons. Picked up weapons become part of the ever-expanding ball, affecting movement, damage taken, and damage dealt by the player.
-                                            </p>
-                                            <div><a href="https://itch.io/jam/pirate/rate/3289585">Play it here!</a></div>
-                                            <div><a href="https://github.com/erikringwalters/pirate-jam-16-prototype">Source Code</a></div>
-                                        </div>
-                                    </li> 
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="large/blocko.png" width="225" height="150" alt="Example image">
-                                            <h2>BLOCKO</h2>
-                                            <h3>2024</h3>
-                                            <p>
-                                            Blocko is a mobile game I made in Unity inspired by 2048, where you combine blocks with the same number value. But instead, the blocks descend from the top of the screen and you have to collect them as the fall. I managed to publish the game to the app store, but it is probably de-listed as I have not kept up with the apk and security requirements. I was going to pitch the game as "something you can watch ads with" and have all the social media market revolve around the ads moreso than the game. Something along the lines of, "My favorite part of Blocko is the variety of ads it plays and how I can't skip them!". Also I made the song in Ableton. 
-                                            </p>
-                                            <div><a href="https://www.youtube.com/watch?v=5rbp5lHfGQU">Raw Gameplay Footage</a></div>
-                                            <div><a href="https://www.youtube.com/watch?v=Bts5VRuhPOI">Watch the Tutorial Video</a></div>
-                                        </div>
-                                    </li> 
-                                    <li>
-                                        <div class="uk-panel uk-padding">
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/bck.png" width="225" height="150" alt="Example image">
-                                            <h2>BCK_RM</h2>
-                                            <h3>2022 - 2023</h3>
-                                            <p>
-                                            BCK_RM was intended to be a puzzle/quest game set in the backrooms.
-                                            Players would traverse the backrooms to find clues to potentially solve real-world puzzles and ciphers.
-                                            However, I found that the development was too much to do alone and the tone of the backrooms community quickly changed to something I disliked.
-                                            So the project is abandoned at the moment.
-                                            However, I still think the tech and idea is interesting and encourage you to check out this video of me explaining the processes.
-                                            </p>
-                                            <div uk-lightbox><a href="https://www.youtube.com/watch?v=2WOUEWYkon4">Video Here</a></div>
-                                        </div>
-                                    </li>   
-                                    <li>
-                                        <div class="uk-panel uk-padding"> 
-                                            <img class="uk-align-left uk-margin-remove-adjacent" src="public/pv4.png" width="225" height="150" alt="Example image">
-                                            <h2>Preservation 4</h2>
-                                            <h3>2023 - Ongoing</h3>
-                                            <p>
-                                            Preservation 4 is a short and simple story game about the player investigating an abandoned town called "Preservation 4".
-                                            It is meant to be a simple and creepy walking sim as well as an introduction to my fictional universe.
-                                            All elements are custom made to fit the PS1 aesthetic, so it's taking a little longer than I would have wanted and is currently on the backburner.
-                                            However, I do intend to finish it.
-                                            </p>
-                                        </div>
-                                    </li>   
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <h1 class="uk-accordion-title" href="#" >Photography</h1>
-                            <div class="uk-accordion-content">
-                                <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/point2.JPG">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/point2.JPG" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/1-border.png">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/1-border.png" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/car2.JPG">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/car2.JPG" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/fox.jpg">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/fox.jpg" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/IMG_0022.jpg">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/IMG_0022.jpg" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/fan.JPG">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/fan.JPG" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
+                <ul class="sections" uk-accordion>
 
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/point.JPG">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/point.JPG" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/notes.JPG">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/notes.JPG" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div> 
-                                        <div uk-lightbox>
-                                            <a href="large/20220602-IMG_0010.jpg">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/20220602-IMG_0010.jpg" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
+                    <!-- About Me -->
+                    <li>
+                        <a class="uk-accordion-title" href="#">About Me</a>
+                        <div class="uk-accordion-content about">
+                            <h3>Experience</h3>
+                            <p>
+                            Born and raised in Southern California, I currently hold a Bachelor's of Science in Computer Science from CSUMB and a Master's of Science in Business Analytics from USC. I have working experience as a software engineer at two different companies and as the Database Analyst of Research at USC's Marshall school of business. That role was primarily building out the ETL infrastructure to acquire data on research materials and make it valuable for our database. I was also the primary point of contact for ad hoc data/analysis requests from faculty and research orgs. After that position, I made my first steps into game development by becoming the principal data scientist for Broken Circle Studios working on the mobile game Marvel Puzzle Quest. It was super fun working with the Marvel IP and I’m really proud of the work our team did revitalizing the game’s monetization in the face of sometimes overwhelming negative statistics. Since then, I’ve been working with some passionate people building a collegiate Esports league from the ground up over at CCEL. This past year, we achieved full 501c3 status as an org and have a packed roster of events planned for the 2025 year. There’s a lot more ground work to be done, but we continue to grow every day!
+                            </p>
+                            <h3>Art</h3>
+                            <p>
+                            Alongside my technical experience, I have pursued artistic fields since I could read.
+                            I started learning piano/music theory at the age of 4 and continued to pick up more instruments throughout my life.
+                            I've even had a few opportunities to play internationally.
+                            To this day, I write and produce music when I find the time.
+                            I started taking interest in visual mediums sometime during middle school.
+                            Wanting to be a youtube star, I would film and edit (not very good) videos with my friends and still edit for friends' Youtube channels from time to time.
+                            Digital art and illustration would become my focus during freshman year of highschool.
+                            To this day, drawing and painting is still a very large part of my life.
+                            Starting in undergrad, I began learning game development and 3D tools.
+                            Using a stolen copy of Maya, I learned 3D modeling and rigging and also built a simple render engine from the ground up using openGL and raw GLSL.
+                            More recently, I've made a few game concepts using Unreal, blender, and ZBrush. I've also been trying my hand at animation, both 2D and 3D.
+                            Looking to the future, I want to combine both my technical expertise and my lifelong love of the arts.
+                            </p>
+                        </div>
+                    </li>
 
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/20220822-IMG_0007_1.jpg">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/20220822-IMG_0007_1.jpg" uk-img></div>
-                                            </a>
+                    <!-- Technical Projects -->
+                    <li>
+                        <a class="uk-accordion-title" href="#">Technical Projects</a>
+                        <div class="uk-accordion-content">
+                            <div class="projects">
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="public/youtube.png" alt="YTBoxD"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>YTBoxD</h3><span class="year">2026</span></div>
+                                        <p>
+                                        YTBoxD is the working name for an app that is effectively LetterboxD, except for Youtube Videos.
+                                        Currently still in testing, the app provides an alternative, community driven recommendation system and more granular ratings than what the base Youtube service provides.
+                                        The app is written in Svelt, Go, PostgreSQL, and hosted on Ubuntu.
+                                        </p>
+                                        <div class="links"><a class="btn" href="https://ghostvendor.net">Visit the Site Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="public/art.jpg" alt="Art Reference Catalog Fullstack App"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>Art Reference Catalog Fullstack App</h3><span class="year">2025</span></div>
+                                        <p>
+                                        In 2022, I wrote a simple webapp for managing saved reference images.
+                                        However, it was written without a frontend framework and relied on css libraries and raw JS scripts.
+                                        So, this a rewrite using React, Nodejs/Expressjs, and Mongodb.
+                                        </p>
+                                        <p>
+                                        After drawing and painting for several years, I accumulated hundreds of reference images on my local harddrive.
+                                        There were countless times in which I would want to find a specific image to reference, but have to look through hundreds of images to find it.
+                                        Even with all the images categorized, this was often very difficult and time consuming if I had a specific image in mind.
+                                        So, I decided to build a full stack app to save the image names along with user added tags.
+                                        The user can upload an image and enter information for the image: character name, source name, body type, NSFW filter, and tags.
+                                        You can search for images via this information or view random images with or without a filter.
+                                        The webapp manages the images locally and saves image data via cloud-based MongoDb.
+                                        </p>
+                                        <div class="links"><a class="btn" href="https://github.com/ausmartinez/Art-Reference-Catalog-App">Code Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="large/pink.png" alt="Personal Spotify Wrapped"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>Personal Spotify Wrapped</h3><span class="year">2024/25</span></div>
+                                        <p class="long">
+                                        Inspired by a Tiktok and a want for a more visible portfolio, this project uses Spotify’s web API
+                                        to create a personal Spotify Wrapped written entirely in Python. I do plan to revisit near the
+                                        end of 2025 to see what has changed and to compare results with the official Spotify wrapped.
+                                        This notebook looks at my listening history and generates an image with visuals that change in
+                                        accordance with the data. It generates an “album map” which is the top 4 listened albums averaged
+                                        together and then passed through a median filter to create an interesting effect. We also use the
+                                        average color of this album map to decide what color theme to use for the final image. Lastly we
+                                        use a histogram of the songs’ popularity field to make the background a little more interesting.
+                                        If you listen to less popular music, the bars will be right skewed and more left skewed if you tend
+                                        to favor the top of the billboards. As of writing (1/6/25), there is only about two weeks worth of
+                                        data.
+                                        Data is collected via a script hosted on a remote Ubuntu server that pulls my most recently played
+                                        songs from Spotify web API ever hour. The script saves the most recently played songs to a csv
+                                        file using the played_at field to make sure there is no overlapping or duplicated data and to only
+                                        append unrecorded data while also doing some initial cleaning. We then simply pull the csv file
+                                        that now contains my entire listening history for us in this notebook.
+                                        Initially, I planned on doing an in depth statistical analysis for my listening habits using the number
+                                        of times I listened to a song as the response variable. However a few days before I started working
+                                        on this project, Spotify deprecated their audio feature API endpoint. This significantly decreased
+                                        the amount of numeric features that could be used in a statistical model without having to search
+                                        for, download, then process thousands of songs myself. We could derive more features from the
+                                        text data. However, I wanted to concentrate on the application of linear models rather than NLMs.
+                                        My initial concern was that, within black box of neural models, it may simply favor similary to
+                                        or matches with the most popular artists and song titles. I would say that a band having a name
+                                        similar to my most listened to band is not grounds for wether I would listen to a song a lot. For
+                                        instance, let’s consider the two bands “Ghost” and “As Ghosts”. Their names are very similar and
+                                        probably have high cosin similarity, but I have not listened to a “Ghost” song in months whereas
+                                        “As Ghosts” has become one of my favorite artists in the past month.
+                                        In leue of working statistical models, I decided to instead challenge myself to make something that
+                                        I would typically use Photoshop for except entirely in Python.
+                                        </p>
+                                        <div class="links"><a class="btn" href="https://github.com/ausmartinez/Personalized-Spotify-Wrapped">Code Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="public/conlang.jpg" alt="Custom Constructed Language Dictionary"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>Custom Constructed Language Dictionary</h3><span class="year">2020</span></div>
+                                        <p>
+                                        In 2019, I got interested in world-building and writing stories for these fictional worlds. Part of that was developing written and spoken languages.
+                                        One difficulty in that, is remembering definitions of the potentially hundreds of words your conlang may have.
+                                        Initially, I was storing everything on a google doc, but this quickly became too complicated.
+                                        So instead, I built a CLI tool that allows you to add, edit, and delete words and their definitions.
+                                        There was no need for a traditional DB solution, so it is simply a collection of specific JSON operations.
+                                        However, it was really helpful and is an excellent example of successfully filling a need and creating a time-saver with what I have learned.
+                                        </p>
+                                        <div class="links"><a class="btn" href="https://github.com/ausmartinez/ConLang-Dictionary">Code Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="public/gcp.png" alt="RetinaNet Object Detection on MBARI Station M Images"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>RetinaNet Object Detection on MBARI Station M Images</h3><span class="year">2019</span></div>
+                                        <p>
+                                        This was my senior year capstone project in which we trained a deep learning model on the Google Cloud Platform in order to help deep sea researchers identify and track benthic life.
+                                        The Monterey Bay Aquarium Research Institute had seafloor imaging stations that would capture an image of the sea floor every hour for an entire year.
+                                        Afterwards, they would have ~8000 images to look through to identify any lifeforms captured by the camera.
+                                        This is a very time-consuming task and very tedious.
+                                        Our project was to provide an automated solution using Deep learning and Computer Vision.
+                                        We were to train a, at the time, bleeding edge DL model called RetinaNet.
+                                        The model was so new, much of the cloud infrastructure on GCP was not equipped to run this model and we were forced to build much of those processes.
+                                        I specifically worked on the tensorflow record transfer and training/inference portion of the pipeline.
+                                        </p>
+                                        <div class="links"><a class="btn" href="https://github.com/ausmartinez/MBARI-RetinaNet-ODM">Code Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="public/cpp.png" alt="Audio Reactive PBR Render Engine"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>Audio Reactive PBR Render Engine</h3><span class="year">2018</span></div>
+                                        <p>
+                                        I wanted to learn how to make a game engine with my friend. So we set out to build one using OpenGL and GLSL.
+                                        Following a tutorial, we managed to build a very simple engine that could load objects, apply shaders, and allow camera movement.
+                                        Afterwards, I wanted to do something fun and decided to make an audio visualizer using shaders as the frequency response.
+                                        Built in the same stack, you can pass an audio file to the program, it will then play the file and use FFT to extract frequency information.
+                                        It then bins the frequency range and each bin is attached to some parameter in the lighting shaders.
+                                        I didn't know too much about how to make 3D lighting look good at the time and the frequency response is not that good, but I was still able to get a result.
+                                        </p>
+                                        <div class="links" uk-lightbox="toggle: .lb">
+                                            <a class="btn" href="https://github.com/ausmartinez/Audio-Reactive-PBR-Render-Engine">Code Here</a>
+                                            <a class="btn lb" href="https://www.youtube.com/watch?v=967pWoz0MPE">Video Here</a>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/hhhhhh.png">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/hhhhhh.png" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/thisonef4.jpg">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
-                                                    data-src="large/thisonef4.jpg" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
+                                </article>
                             </div>
-                        </li>
+                        </div>
+                    </li>
 
-
-                        <li>
-                            <h1 class="uk-accordion-title" href="#" >Art</h1>
-                            <div class="uk-accordion-content">
-                                <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/bigdad.png" data-caption="2026">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/bigdad.png" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/minth.jpg" data-caption="2023">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/minth.jpg" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/scant.jpg" data-caption="2023">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/scant.jpg" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/pow.jpg" data-caption="2022">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/pow.jpg" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div uk-lightbox>
-                                            <a href="large/atla.jpg" data-caption="2019">
-                                                <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="large/atla.jpg" uk-img></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                    <!-- Animation -->
+                    <li>
+                        <a class="uk-accordion-title" href="#">Animation</a>
+                        <div class="uk-accordion-content">
+                            <div class="feature">
+                                <h3>2026 Animation Reel (Contains audio) <a href="https://www.youtube.com/watch?v=9C9MoG3DrXQ">here</a></h3>
+                                <span uk-icon="icon: play-circle; ratio: 1.6"></span>
                             </div>
-                        </li>
-                    </ul>
-                </div>
+                            <div class="projects">
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="large/pap.png" alt="Public Access Purgatory - Opening"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>Public Access Purgatory - Opening | SENSORY OVERLOAD</h3><span class="year">2026</span></div>
+                                        <p>
+                                        I had the priveledge to animate a few shots in the opening for the indie animation project, Public Access Purgaroty.
+                                        </p>
+                                        <div class="links"><a class="btn" href="https://www.youtube.com/watch?v=__Z1ha7vy28">Check It Out Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="public/momo.png" alt="PaP - Stutturing Issue"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>PaP - Stutturing Issue</h3><span class="year">2026</span></div>
+                                        <p>
+                                        Small animation for social media featuring characters from the upcoming Indie Seriec, Public Access Purgatory.
+                                        </p>
+                                        <div class="links"><a class="btn" href="https://www.tiktok.com/@studio.freak.friends/video/7671322530661158176">Check It Out Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="large/op.png" alt="Studies in Drevtam Opening"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>Studies in Drevtam Opening</h3><span class="year">2026</span></div>
+                                        <p>
+                                        Series opening for Studies in Drevtam.
+                                        </p>
+                                        <div class="links" uk-lightbox><a class="btn" href="https://www.youtube.com/watch?v=St0_STBoZx0">Check It Out Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="large/0048.png" alt="Drevtam Episode 1"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>Drevtam Episode 1 (Explicit Language)</h3><span class="year">2025</span></div>
+                                        <p>
+                                        The first episode of my Indie Animation project, Studies in Drevtam. This project has been a fun and colaberative effort with 3 voice actors and 2 volunteer animators.
+                                        </p>
+                                        <div class="links" uk-lightbox><a class="btn" href="https://www.youtube.com/watch?v=exO8G7eV4_Y">Check It Out Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="large/1070.png" alt="Short Character Intro Animation"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>Short Character Intro Animation</h3><span class="year">2025</span></div>
+                                        <p>
+                                        I made a fun little character animation. This was a particularly fun project as it involved a bunch of different skillsets all at once (3D modeling, 3D rigging, 3D animtion, Compositing, Video Editing, Audio Editing, Text Graphics). I also really like the song. :)
+                                        </p>
+                                        <div class="links" uk-lightbox><a class="btn" href="https://youtu.be/bG3tS5DaJ7w">Check It Out Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="large/eyerig.png" alt="2D Texture Eye Rig in Blender"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>2D Texture Eye Rig in Blender</h3><span class="year">2025</span></div>
+                                        <p>
+                                        In the past few months I’ve gotten really into 3D animation. I’ve dabbled in 3D modeling and Blender before but have started spending a lot of time in the program. When I first got into 3D, it was for the purpose of making 2D animation. The idea was to create a 3D to 2D pipeline where 3D models would do the heavy lifting for animation and I would draw over each frame in 2D to try and preserve authentic 2D stylings. However, this proved too time consuming and my 3D modeling skills are still not where I want them to be. Instead, I’ve opted to use stylized low-poly models that use 2D textures for the face. An issue I found immediately was the need to draw each eye shape for every direction a character looks.
+                                        My solution was to create a 2D Texture eye rig. First, we create a group of numbered textures to form a grid of pupils that cover every direction a character can look. We then create a driver that looks at the X,Y coordinates of a bone and map them to its corresponding pupil texture. A texture with transparency to allow the pupil to always be visible is then placed on top of the selected pupil texture. This allows the animator to independently control the eye’s expression and eye direction without the need to draw an excessive amount of eye textures.
+                                        </p>
+                                        <div class="links" uk-lightbox><a class="btn" href="https://www.youtube.com/watch?v=mZkod3m5wuo">Check It Out Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="large/unreal_cross.png" alt="1 Day Unreal Engine Animation"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>1 Day Unreal Engine Animation</h3><span class="year">2024</span></div>
+                                        <p>
+                                        I wanted to challenge myself to animate a small sequence using Unreal Engine, both to make something cool but also as a portfolio piece. So I learned about the cinematic features, animation control, and particals in Unreal engine to create a small animation all in a single day. I pulled a model from Sketchfab that fitted the silhouette I wanted and then rigged and animated it (i was really new to 3d animation at the time).
+                                        </p>
+                                        <div class="links" uk-lightbox><a class="btn" href="https://www.artstation.com/artwork/vDN00v">Check It Out Here</a></div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Graphics -->
+                    <li>
+                        <a class="uk-accordion-title" href="#">Graphics</a>
+                        <div class="uk-accordion-content">
+                            <p class="section-intro">Mostly graphics and logos I've made for my non-profit, CCEL</p>
+                            <div class="links" style="margin-bottom: 24px;">
+                                <a class="btn" href="https://www.youtube.com/watch?v=IsiRuA8xnSg">CCEL Stinger Screen</a>
+                                <a class="btn" href="https://www.youtube.com/watch?v=35O0S-fw-M0">CCEL LBCC Standby Screen</a>
+                            </div>
+                            <div class="gallery" uk-lightbox>
+                                <a href="large/bigscreen.JPG" data-caption="2025"><img loading="lazy" src="large/bigscreen.JPG" alt=""></a>
+                                <a href="large/cream.png" data-caption="2025"><img loading="lazy" src="large/cream.png" alt=""></a>
+                                <a href="large/greeninv.png" data-caption="2025"><img loading="lazy" src="large/greeninv.png" alt=""></a>
+                                <a href="large/nails.png" data-caption="2025"><img loading="lazy" src="large/nails.png" alt=""></a>
+                                <a href="large/Render_2.png" data-caption="2025"><img loading="lazy" src="large/Render_2.png" alt=""></a>
+                                <a href="large/sdlogo.png" data-caption="2025"><img loading="lazy" src="large/sdlogo.png" alt=""></a>
+                                <a href="large/GV_Logo.png" data-caption="2025"><img loading="lazy" src="large/GV_Logo.png" alt=""></a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Games -->
+                    <li>
+                        <a class="uk-accordion-title" href="#">Games</a>
+                        <div class="uk-accordion-content">
+                            <div class="projects">
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="large/ballistic.png" alt="BALL-ISTIC"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>BALL-ISTIC</h3><span class="year">2025</span></div>
+                                        <p>
+                                        Made for the two week long Pirate Software Game Jam 16, BALL-ISTIC is a game where the player controls a spiky ball that rolls around, damages enemies, and picks up dropped weapons. Picked up weapons become part of the ever-expanding ball, affecting movement, damage taken, and damage dealt by the player.
+                                        </p>
+                                        <div class="links">
+                                            <a class="btn" href="https://itch.io/jam/pirate/rate/3289585">Play it here!</a>
+                                            <a class="btn" href="https://github.com/erikringwalters/pirate-jam-16-prototype">Source Code</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="large/blocko.png" alt="BLOCKO"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>BLOCKO</h3><span class="year">2024</span></div>
+                                        <p>
+                                        Blocko is a mobile game I made in Unity inspired by 2048, where you combine blocks with the same number value. But instead, the blocks descend from the top of the screen and you have to collect them as the fall. I managed to publish the game to the app store, but it is probably de-listed as I have not kept up with the apk and security requirements. I was going to pitch the game as "something you can watch ads with" and have all the social media market revolve around the ads moreso than the game. Something along the lines of, "My favorite part of Blocko is the variety of ads it plays and how I can't skip them!". Also I made the song in Ableton.
+                                        </p>
+                                        <div class="links">
+                                            <a class="btn" href="https://www.youtube.com/watch?v=5rbp5lHfGQU">Raw Gameplay Footage</a>
+                                            <a class="btn" href="https://www.youtube.com/watch?v=Bts5VRuhPOI">Watch the Tutorial Video</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="public/bck.png" alt="BCK_RM"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>BCK_RM</h3><span class="year">2022 - 2023</span></div>
+                                        <p>
+                                        BCK_RM was intended to be a puzzle/quest game set in the backrooms.
+                                        Players would traverse the backrooms to find clues to potentially solve real-world puzzles and ciphers.
+                                        However, I found that the development was too much to do alone and the tone of the backrooms community quickly changed to something I disliked.
+                                        So the project is abandoned at the moment.
+                                        However, I still think the tech and idea is interesting and encourage you to check out this video of me explaining the processes.
+                                        </p>
+                                        <div class="links" uk-lightbox><a class="btn" href="https://www.youtube.com/watch?v=2WOUEWYkon4">Video Here</a></div>
+                                    </div>
+                                </article>
+                                <article class="project">
+                                    <div class="project-media"><img loading="lazy" src="public/pv4.png" alt="Preservation 4"></div>
+                                    <div class="project-body">
+                                        <div class="project-head"><h3>Preservation 4</h3><span class="year">2023 - Ongoing</span></div>
+                                        <p>
+                                        Preservation 4 is a short and simple story game about the player investigating an abandoned town called "Preservation 4".
+                                        It is meant to be a simple and creepy walking sim as well as an introduction to my fictional universe.
+                                        All elements are custom made to fit the PS1 aesthetic, so it's taking a little longer than I would have wanted and is currently on the backburner.
+                                        However, I do intend to finish it.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Photography -->
+                    <li>
+                        <a class="uk-accordion-title" href="#">Photography</a>
+                        <div class="uk-accordion-content">
+                            <div class="gallery" uk-lightbox>
+                                <a href="large/point2.JPG"><img loading="lazy" src="large/point2.JPG" alt=""></a>
+                                <a href="large/1-border.png"><img loading="lazy" src="large/1-border.png" alt=""></a>
+                                <a href="large/car2.JPG"><img loading="lazy" src="large/car2.JPG" alt=""></a>
+                                <a href="large/fox.jpg"><img loading="lazy" src="large/fox.jpg" alt=""></a>
+                                <a href="large/IMG_0022.jpg"><img loading="lazy" src="large/IMG_0022.jpg" alt=""></a>
+                                <a href="large/fan.JPG"><img loading="lazy" src="large/fan.JPG" alt=""></a>
+                                <a href="large/point.JPG"><img loading="lazy" src="large/point.JPG" alt=""></a>
+                                <a href="large/notes.JPG"><img loading="lazy" src="large/notes.JPG" alt=""></a>
+                                <a href="large/20220602-IMG_0010.jpg"><img loading="lazy" src="large/20220602-IMG_0010.jpg" alt=""></a>
+                                <a href="large/20220822-IMG_0007_1.jpg"><img loading="lazy" src="large/20220822-IMG_0007_1.jpg" alt=""></a>
+                                <a href="large/hhhhhh.png"><img loading="lazy" src="large/hhhhhh.png" alt=""></a>
+                                <a href="large/thisonef4.jpg"><img loading="lazy" src="large/thisonef4.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Art -->
+                    <li>
+                        <a class="uk-accordion-title" href="#">Art</a>
+                        <div class="uk-accordion-content">
+                            <div class="gallery" uk-lightbox>
+                                <a href="large/bigdad.png" data-caption="2026"><img loading="lazy" src="large/bigdad.png" alt=""></a>
+                                <a href="large/minth.jpg" data-caption="2023"><img loading="lazy" src="large/minth.jpg" alt=""></a>
+                                <a href="large/scant.jpg" data-caption="2023"><img loading="lazy" src="large/scant.jpg" alt=""></a>
+                                <a href="large/pow.jpg" data-caption="2022"><img loading="lazy" src="large/pow.jpg" alt=""></a>
+                                <a href="large/atla.jpg" data-caption="2019"><img loading="lazy" src="large/atla.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </main>
         </div>
     </body>
